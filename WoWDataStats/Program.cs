@@ -6,7 +6,11 @@ namespace WoWDataStats
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string installPath = @"D:\Games\WoW PTR\";
+            string product = "wow"; // wow (release), wowt (ptr)
+            string listfilePath = @"C:\Users\cg3\Downloads\listfile (16).csv";
+
+            Generator generator = new Generator(installPath, product, listfilePath);
         }
     }
 }
